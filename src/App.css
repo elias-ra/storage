@@ -1,10 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 html, body, #root, .App{
   width: 100%;
   height: 100%;
 }
+
+.App{
+  background-color: hsl(229, 57%, 11%);
+  background-image: url('./assests/bg-desktop.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+=========
+Tools
+=========
+*/
+
+.tools{
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(228, 56%, 26%);
+  width: 20%;
+  height: 150px;
+  padding: 30px;
+  border-radius: 7px;
+  border-top-right-radius: 50px;
+}
+
+.fylo img{
+  height: 30px;
+}
+
+.icons{
+  display: flex; 
+  justify-content: center;
+  width: fit-content;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+
+.folder, .document, .upload{
+  background-color: hsl(229, 57%, 11%);
+  width: 30px;
+  padding: 6px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.folder:hover, .document:hover, .upload:hover{
+  background-color: hsl(230, 42%, 25%);
+}
+
+/* 
+=========
+Storage
+=========
+*/
+
+.storage{
+  position: relative;
+  height: 150px;
+  padding-top: 20px;
+  width: 32%;
+}
+
+.leftGB{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: hsl(243, 100%, 93%);
+  width: 42%;
+  height: 62px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftGB .number{
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.leftGB .text{
+  font-weight: 400;
+}
+
+.information{
+  background-color: hsl(228, 56%, 26%);
+  height: 110px;
+  border-radius: 7px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.line{
+  width: 100%;
+  height: 12px;
+  background-color: hsl(229, 57%, 11%);
+  padding: 2.2px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.line div{
+  width: 75%;
+  height: 100%;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+}
+
+.line div span{
+  width: 8px;
+  height: 100%;
+  background-color: white;
+  border-radius: 100px;
+  float: right;
+}
+
+.information p, .information .GB .noGB, .information .GB .allGB{
+  font-weight: 400;
+  font-size: 10px;
+  color : hsl(243, 100%, 93%);
+}
+
+.information p span{
+  font-weight: 700;
+}
+
+.GB{
+  margin-top: 10px;
+}
+
+.noGB{
+  float: left;
+}
+
+.allGB{
+  float: right;
+}
+
