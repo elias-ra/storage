@@ -17,7 +17,7 @@ html, body, #root, .App{
   background-image: url('./assests/bg-desktop.png');
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 100% 50%;
+  background-size: 1360px 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,16 +50,16 @@ Tools
   justify-content: center;
   width: fit-content;
   margin-top: 25px;
-  cursor: pointer;
 }
 
 
 .folder, .document, .upload{
   background-color: hsl(229, 57%, 11%);
-  width: 30px;
+  width: 34px;
   padding: 6px;
   border-radius: 8px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .folder:hover, .document:hover, .upload:hover{
@@ -155,3 +155,84 @@ Storage
   float: right;
 }
 
+/* 
+=========
+1068px viewport
+=========
+*/
+
+@media screen and (max-width: 1068px){
+  .tools{
+    width: 214px;
+  }
+  .storage{
+    width: 342px;
+  }
+}
+
+/* 
+=========
+615px viewport
+=========
+*/
+
+@media screen and (max-width : 615px) {
+  .App{
+    flex-direction: column;
+  }
+
+  .tools{
+    width: 260px;
+    margin: 0;
+  }
+
+  .storage{
+    padding-top: 0px;
+    width: 260px;
+  }
+
+  .information{
+    margin-top: 10px;
+    padding-bottom: 95px;
+  }
+
+  .line{
+    height: 15px;
+    padding: 3px;
+  }
+  .line div{
+    border-radius: 10px;
+  }
+  .line div span{
+    border-radius: 20px;
+  }
+  .leftGB{
+    bottom: 0px;
+    right: 0px;
+    left: 24%;
+    top: 72%;
+    border-radius: 10px;
+    width: 130px;
+  }
+  .leftGB .text{
+    font-size: 13px;
+    margin-left: 5px;
+  }
+  .leftGB .number{
+    font-size: 26px;
+  }
+}
+
+/* 
+=========
+375px viewport (mobile phone)
+=========
+*/
+
+@media screen and (max-width : 375px) {
+  .App{
+    background-image: url('./assests/bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
